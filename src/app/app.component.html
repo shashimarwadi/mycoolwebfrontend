@@ -1,0 +1,121 @@
+
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  <span>Welcome</span>
+    <div class="spacer"></div>
+</div>
+
+<form [formGroup]="orderForm" (ngSubmit)="onSubmit()">
+  <div class="container-fluid">
+    <div class="row">
+      <h1>Create Order</h1>
+    </div>
+    <!-- ROW-1-->
+    <div class="row">
+      <div class="col-2">
+        <h4>Item Code</h4>
+      </div>
+      <div class="col-3">
+          <select class="custom-select" formControlName="item01" id="inputGroupSelect01">
+              <option *ngFor="let item of item_iist" [ngValue]="item">{{ item }}</option>
+          </select>
+        </div>
+        <div class="col-1">
+        <h5>Quantity</h5>
+      </div>
+      <div class="col-1">
+          <input type="text" id="quantity" name="quantity" class="form-control" formControlName="qty01">
+        </div>
+      </div>
+
+
+    <!-- ROW-2-->
+    <div class="row">
+        <div class="col-2">
+          <h4>Item Code</h4>
+        </div>
+        <div class="col-3">
+            <select class="custom-select" formControlName="item02" id="inputGroupSelect02">
+              <option *ngFor="let item of item_iist" [ngValue]="item">{{ item }}</option>
+            </select>
+          </div>
+          <div class="col-1">
+            <h5>Quantity</h5>
+          </div>
+        <div class="col-1">
+            <input type="text" id="quantity" name="quantity" class="form-control" formControlName="qty02">
+          </div>
+        </div>
+
+    <!-- ROW-3-->
+    <div class="row">
+        <div class="col-2">
+          <h4>Item Code</h4>
+        </div>
+        <div class="col-3">
+            <select class="custom-select" formControlName="item03" id="inputGroupSelect03">
+              <option *ngFor="let item of item_iist" [ngValue]="item">{{ item }}</option>
+            </select>
+          </div>
+          <div class="col-1">
+            <h5>Quantity</h5>
+          </div>
+        <div class="col-1">
+            <input type="text" id="quantity" name="quantity" class="form-control" formControlName="qty03">
+          </div>
+        </div>
+
+    <!-- ROW-4-->
+    <div class="row">
+        <div class="col-2">
+          <h4>Item Code</h4>
+        </div>
+        <div class="col-3">
+            <select class="custom-select" formControlName="item04" id="inputGroupSelect04">
+              <option *ngFor="let item of item_iist" [ngValue]="item">{{ item }}</option>
+            </select>
+          </div>
+          <div class="col-1">
+            <h5>Quantity</h5>
+          </div>
+        <div class="col-1">
+            <input type="text" id="quantity" name="quantity" class="form-control" formControlName="qty04">
+          </div>
+        </div>
+
+    <!-- ROW-5-->
+    <div class="row">
+        <div class="col-2">
+          <h4>Item Code</h4>
+        </div>
+        <div class="col-3">
+            <select class="custom-select" formControlName="item05" id="inputGroupSelect05">
+              <option *ngFor="let item of item_iist" [ngValue]="item">{{ item }}</option>
+            </select>
+          </div>
+          <div class="col-1">
+            <h5>Quantity</h5>
+          </div>
+        <div class="col-1">
+            <input type="text" id="quantity" name="quantity" class="form-control" formControlName="qty05">
+          </div>
+        </div>
+
+        
+
+
+
+
+
+
+      <div class="row pt-5">
+          <div class="col-2">
+              <input type="submit" class="btn btn-lg btn-primary btn-block" value="submit">
+          </div>
+      </div>
+  </div>
+</form>

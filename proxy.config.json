@@ -1,0 +1,7 @@
+{
+    "*" : {
+        "target": "http://www.shashidalmia.com:8081",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
