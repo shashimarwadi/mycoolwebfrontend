@@ -1,0 +1,2 @@
+# mycoolwebfrontend
+Angular frontend
